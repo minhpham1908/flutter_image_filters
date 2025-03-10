@@ -6,6 +6,9 @@ abstract class ShaderConfiguration extends FilterConfiguration {
   bool _needRedraw = true;
   FragmentProgram? _internalProgram;
 
+  //for now
+  FragmentProgram? get internalProgram => _internalProgram;
+
   ShaderConfiguration(this._floats);
 
   /// Prepares the shader program
